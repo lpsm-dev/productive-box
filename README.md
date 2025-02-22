@@ -26,7 +26,9 @@ Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Overview](#overview)
+- [Visão Geral](#vis%C3%A3o-geral)
+  - [Objetivo](#objetivo)
+  - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
 - [Setup](#setup)
   - [Prep work](#prep-work)
   - [Project setup](#project-setup)
