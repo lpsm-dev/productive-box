@@ -1,0 +1,10 @@
+---
+name: "productive-box"
+author: "lpsm-dev"
+description: "Are you an early 🐤 or a night 🦉? Let's check out in gist"
+branding:
+  icon: "activity"
+  color: "blue"
+runs:
+  using: "node12"
+  main: "dist/index.js"

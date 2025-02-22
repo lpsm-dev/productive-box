@@ -1,0 +1,18 @@
+---
+name: Automation - Update gist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update gist
+        uses: lpsm-dev/productive-box@main
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: "56b79825fea58bb9c0aa888a1f94f7cd"
+          TIMEZONE: "America/Sao_Paulo"
