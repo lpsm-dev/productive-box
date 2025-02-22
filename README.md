@@ -101,7 +101,7 @@ Para verificar o histórico de mudanças do projeto, acesse o arquivo [**CHANGEL
 
 # Troubleshooting
 
-Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/homelabsz/helm-charts/issues).
+Se você tiver algum problema, [abra uma issue nesse projeto](https://github.com/lpsm-dev/productive-box/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
