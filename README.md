@@ -11,13 +11,9 @@ Hello Human 👽! Bem-vindo ao meu repositório 👋
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-<p>
-  Você é diurno 🐤 ou noturno 🦉?
-  <br/>
-  Vamos dar uma olhada 🧐!
-  <br/>
-  Inspirado pelo projeto [productive-box](https://github.com/maxam2017/productive-box) do @maxam2017.
-</p>
+Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
+
+Inspirado pelo projeto [productive-box](https://github.com/maxam2017/productive-box) do @maxam2017.
 
 </div>
 
