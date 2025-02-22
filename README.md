@@ -42,9 +42,15 @@ Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 
 </details>
 
-# Overview
+# Visão Geral
+
+## Objetivo
 
 Esse projeto usa a API graphQL do GitHub para obter os históricos de commits de um usuário e colocar de forma customizada em um Gist do GitHub.
+
+## Contexto e Motivação
+
+Eu sempre gostei de customizar meu perfil do GitHub e navegando por alguns sites, achei essa iniciativa e decidi criar esse projeto para automatizar esse processo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
