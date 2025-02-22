@@ -13,9 +13,10 @@ Hello Human 👽! Bem-vindo ao meu repositório 👋
 
 Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 
-Inspirado pelo projeto [productive-box](https://github.com/maxam2017/productive-box) do @maxam2017.
-
 </div>
+
+> [!NOTE]
+> Inspirado pelo projeto [productive-box](https://github.com/maxam2017/productive-box) do @maxam2017.
 
 # Sumário
 
@@ -66,7 +67,7 @@ Esse projeto usa a API graphQL do GitHub para obter os históricos de commits de
 1. Acesse o repositório **Settings > Secrets**
 1. Adicione as seguintes variáveis de ambiente:
    - **GH_TOKEN:** O token do GitHub gerado acima.
-1. [Fixe o Gist recém-criado](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile)
+1. [Fixe o gist recém-criado](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
