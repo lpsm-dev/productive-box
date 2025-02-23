@@ -1,4 +1,3 @@
-import { resolve } from "path";
 import { config } from "dotenv";
 import { Octokit } from "@octokit/rest";
 
@@ -10,7 +9,7 @@ import {
   createCommittedDateQuery,
 } from "./queries";
 
-config({ path: resolve(__dirname, "../.env") });
+config({ path: [".env"] });
 
 interface IRepo {
   name: string;
@@ -198,7 +197,10 @@ const fetchCommitHistory = async (id: string, name: string, owner: string) => {
     gist_id: GIST_ID,
     files: {
       [filename]: {
-        filename: filename,
+        filename:
+          morning + daytime > evening + night
+            ? "I'm an early 🐤"
+            : "I'm a night 🦉",
         content: lines.join("\n"),
       },
     },
