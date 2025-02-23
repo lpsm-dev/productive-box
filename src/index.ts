@@ -188,5 +188,5 @@ interface ICommitHistoryResponse {
       },
     },
   });
-  console.log("✨  Done");
+  console.log("Success to update the gist 🎉");
 })();
