@@ -13,8 +13,7 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider tsc src/index.ts --outDir dist && ncc build dist/index.js --minify && find dist/ -type f -not -name 'index.js' -delete"
   },
   "dependencies": {
-    "@octokit/rest": "^21.0.0",
-    "dotenv": "^16.0.0"
+    "@octokit/rest": "^21.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
