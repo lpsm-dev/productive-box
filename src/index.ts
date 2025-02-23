@@ -143,6 +143,7 @@ interface ICommitHistoryResponse {
 
     return [...prev, line.join(" ")];
   }, []);
+
   const GH_TOKEN = process.env.GH_TOKEN;
   if (!GH_TOKEN) {
     throw new Error("GH_TOKEN environment variable is not set");
@@ -155,12 +156,13 @@ interface ICommitHistoryResponse {
   console.log(`GIST_ID: ${process.env.GIST_ID}`);
   const gist = await octokit.gists
     .get({
-      gist_id: process.env.GIST_ID as string,
+      gist_id: GIST_ID,
     })
-    .catch((error) => {
+    .catch((error: unknown) => {
       console.error(`Unable to update gist\n${error}`);
       return null;
     });
+
   if (!gist || !gist.data || !gist.data.files) {
     console.error("Invalid gist response");
     return;
