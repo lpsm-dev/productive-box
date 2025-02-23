@@ -1,6 +1,7 @@
 import { resolve } from "path";
 import { config } from "dotenv";
 import { Octokit } from "@octokit/rest";
+
 import githubQuery from "./githubQuery";
 import generateBarChart from "./generateBarChart";
 import {
