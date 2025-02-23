@@ -1,4 +1,4 @@
-export default async function (query: string) {
+export default async function (query: string): Promise<any> {
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
@@ -6,5 +6,6 @@ export default async function (query: string) {
     },
     body: JSON.stringify({ query }).replace(/\\n/g, ""),
   });
+
   return res.json();
 }

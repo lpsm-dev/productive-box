@@ -54,25 +54,6 @@ interface ICommitHistoryResponse {
   };
 }
 
-const fetchCommitHistory = async (id: string, name: string, owner: string) => {
-  const branches = ["main", "master"];
-  for (const branch of branches) {
-    try {
-      const response = await githubQuery(
-        createCommittedDateQuery(id, name, owner, branch),
-      );
-      if (response?.data?.repository?.ref?.target?.history?.edges.length > 0) {
-        return response;
-      }
-    } catch (error) {
-      console.error(
-        `Unable to get commit history for branch ${branch}\n${error}`,
-      );
-    }
-  }
-  return null;
-};
-
 (async () => {
   const userResponse = await githubQuery(userInfoQuery).catch((error) => {
     console.error(`Unable to get username and id\n${error}`);
@@ -112,7 +93,9 @@ const fetchCommitHistory = async (id: string, name: string, owner: string) => {
   let committedTimeResponseMap: ICommitHistoryResponse[] = [];
   try {
     committedTimeResponseMap = await Promise.all(
-      repos.map(({ name, owner }) => fetchCommitHistory(id, name, owner)),
+      repos.map(({ name, owner }) =>
+        githubQuery(createCommittedDateQuery(id, name, owner)),
+      ),
     );
   } catch (error) {
     console.error(`Unable to get the commit info\n${error}`);
