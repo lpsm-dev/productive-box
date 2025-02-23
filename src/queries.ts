@@ -23,22 +23,27 @@ export const createContributedRepoQuery = (username: string) => `
   }
 `;
 
-export const createCommittedDateQuery = (id: string, name: string, owner: string) => `
-  query {
-    repository(owner: "${owner}", name: "${name}") {
-      ref(qualifiedName: "master") {
-        target {
-          ... on Commit {
-            history(first: 100, author: { id: "${id}" }) {
-              edges {
-                node {
-                  committedDate
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+export const createCommittedDateQuery = (
+  id: string,
+  name: string,
+  owner: string,
+  branch: string,
+) => `
+     query {
+       repository(owner: "${owner}", name: "${name}") {
+         ref(qualifiedName: "${branch}") {
+           target {
+             ... on Commit {
+               history(first: 100, author: { id: "${id}" }) {
+                 edges {
+                   node {
+                     committedDate
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+   `;
