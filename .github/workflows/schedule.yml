@@ -20,5 +20,9 @@ jobs:
           node-version: "lts/*"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Install dependencies
-        run: yarn run dev
+      - name: Update gist
+        uses: lpsm-dev/productive-box@main
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: "56b79825fea58bb9c0aa888a1f94f7cd"
+          TIMEZONE: "America/Sao_Paulo"
