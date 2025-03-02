@@ -16,7 +16,7 @@ Você é diurno 🐤 ou noturno 🦉? Vamos dar uma olhada 🧐!
 </div>
 
 > [!NOTE]
-> Inspirado pelo projeto [productive-box](https://github.com/maxam2017/productive-box) do @maxam2017.
+> Inspirado no projeto [productive-box](https://github.com/maxam2017/productive-box).
 
 # Sumário
 
