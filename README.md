@@ -52,7 +52,7 @@ Esse projeto usa a API graphQL do GitHub para obter os históricos de commits de
 
 ## Contexto e Motivação
 
-Eu sempre gostei de customizar meu perfil do GitHub e navegando por alguns sites, achei essa iniciativa e decidi criar esse projeto para automatizar esse processo.
+Sempre gostei de customizar meu perfil do GitHub e navegando por alguns sites, achei essa iniciativa e decidi criar esse projeto para automatizar esse processo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
